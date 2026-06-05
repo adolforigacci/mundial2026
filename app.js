@@ -11,7 +11,7 @@ const BACKENDS = {
 const ES_PRODUCCION = (location.hostname === 'adolforigacci.github.io');
 const CONFIG = {
   SCRIPT_URL: ES_PRODUCCION ? BACKENDS.prod : BACKENDS.test,
-  ADMIN_PASS: 'sifon26',
+  ADMIN_PASS: 'luli912',
 };
 
 // Fecha del inicio del Mundial (cierre por defecto si no se configura otra)
