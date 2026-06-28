@@ -3,15 +3,15 @@
 // ================================================================
 // Backends: producción (datos reales) y prueba (planilla de testing).
 const BACKENDS = {
-  prod: 'https://script.google.com/macros/s/AKfycbyCb23cEqAoeWEYEJV2WoSJzh_wFYPqRocNZV_sxSxnl0kBt3BT-90Oy9i_RZzzaAuvrA/exec',
-  test: 'https://script.google.com/macros/s/AKfycbzwRGR_-IiYD3iPQ4GdlXctJeDDUV2ISu-BlRXn661QYUYUvY9ex5a2SyvtV_gwVw7qUA/exec',
+  prod: 'https://script.google.com/macros/s/AKfycbzZOofgYKXjO7FVaTks5j3ECak10DA0Dvhg-_LSo_hNROjLLIVf1r153imvtUcurNG8kg/exec',
+  test: 'https://script.google.com/macros/s/AKfycbxzK6Qef8Ql5sOFRcgGhYlvmSVqH3gT3evFxaxTTltv26WULVvynFf12aLBZa2xQGW6/exec',
 };
 // El backend de PRODUCCIÓN se usa SOLO en el dominio oficial. Cualquier otro lado
 // (localhost, staging, etc.) usa el de PRUEBA → imposible ensuciar los datos reales.
-const ES_PRODUCCION = (location.hostname === 'fundacionforge.github.io');
+const ES_PRODUCCION = (location.hostname === 'adolforigacci.github.io');
 const CONFIG = {
   SCRIPT_URL: ES_PRODUCCION ? BACKENDS.prod : BACKENDS.test,
-  ADMIN_PASS: 'sifon26',
+  ADMIN_PASS: 'luli912',
 };
 
 // Fecha del inicio del Mundial (cierre por defecto si no se configura otra)
@@ -1498,7 +1498,7 @@ window.addEventListener('load',()=>{
   if (location.hostname === 'github.com') {
     const banner = document.createElement('div');
     banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#7f1d1d;color:#fca5a5;padding:12px 20px;font-size:14px;text-align:center;font-family:sans-serif';
-    banner.innerHTML = '⚠️ <strong>URL incorrecta.</strong> Abre la app desde GitHub Pages: <a href="https://fundacionforge.github.io/mundial2026/" style="color:#fbbf24;font-weight:bold">fundacionforge.github.io/mundial2026</a>';
+    banner.innerHTML = '⚠️ <strong>URL incorrecta.</strong> Abre la app desde GitHub Pages: <a href="https://adolforigacci.github.io/mundial2026/" style="color:#fbbf24;font-weight:bold">adolforigacci.github.io/mundial2026</a>';
     document.body.prepend(banner);
   }
 
