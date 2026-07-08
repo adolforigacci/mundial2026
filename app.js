@@ -1447,7 +1447,7 @@ const FASES_ELIM = [
   {id:'4tos',   label:'Cuartos de final',        pts:3,  cruces:4},
   {id:'semis',  label:'Semifinales',             pts:5,  cruces:2},
   {id:'3ro',    label:'Tercer puesto',           pts:5,  cruces:1},
-  {id:'final',  label:'Final',                   pts:20, cruces:1},
+  {id:'final',  label:'Final',                   pts:10, cruces:1},
 ];
 
 // Numeración oficial FIFA del Mundial 2026 (104 partidos): grupos 1–72 y la fase
